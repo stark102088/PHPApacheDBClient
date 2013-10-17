@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3/org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Database Client Service</title>
+		<meta http-equi="content-type" content="text/html' charset=iso-8859-1"/>
+		<style type="text/css">
+		
+		*{
+		font-family: arial, sans-serif;
+		}
+		
+		div{
+		margin:5px;
+		overflow:hidden;
+		align:middle;
+		}
+		
+		.bold{
+		font-weight:bold;
+		}
+		
+		article.welcome{
+		display:table-cell;
+		min-width:100px;
+		max-width:900px;
+		}
+		
+		article.login{
+		display:table-cell;
+		min-width:100px;
+		max-width:200px;
+		text-align:center;
+		}
+		
+		h4{
+		font-weight:bold;
+		color:#FF3300;
+		}
+		
+		h3{
+		text-align: center;
+		}
+		
+		body{
+		background-color: #A9D0F5;
+		}
+		
+		form{
+		margin:2px;
+		}
+		
+		p, ul{
+		font-size:12px;
+		}
+		
+		img{
+		border-style:solid;
+		border-width:2px;
+		}
+		
+		footer{
+		color:#B45F04;
+		font-weight:bold;
+		text-align:center;
+		font-size:12px;
+		}
+		
+		#SPACE{
+		padding-top:14px;
+		}
+		
+		#ITALIC{
+		font-style:italic;
+		}
+		
+		</style>
+	</head>
+<body>
+	<header>
+		<h3>-- Suppliers, Parts, Jobs, Shipments Database Client -- </h3>
+		<hr />
+	</header>
+	<div>
+		<article class="login">
+			<form method="post" action="SPJSDBStatement.php">
+				<label class="bold" for="username">Username</label>
+				<input type="text" id="username" name="username">
+				<label class="bold" for="password">Password</label>
+				<input type="password" id="password" name="password">	
+				<p></p>
+				<input style= "background-color:#000000; color:white;" type="submit" value="Login">
+				<p id="SPACE"></p>
+			</form>
+			<img src="http://www.w3resource.com/mysql/mysql-logo.jpg" height="90" width="130"></img>
+		</article>
+		<article class="welcome">
+		<h4>Welcome to the Database Client!</h4>
+		<p>This will allow you to run SQL queries and update statements on the Jobs, Suppliers, Parts, Shipments Database. </p>
+		<h4>Database:</h4>
+		<p>MySQL &reg Database</p>
+		<h4>Features:</h4>
+		<ul>
+			<li>User Authentication & Privileges</li>
+			<li>SQL Commands (SELECT, INSERT, UPDATE, DELETE)</li>
+			<li>Results Page</li>
+			<li>Error Checking</li>
+		</ul>
+		<h4>User Login:</h4>
+		<p>Enter your crendentials on the left. Otherwise, use the credentials below to login as a guest: </p>
+		<p id="ITALIC">(Guests may only issue SELECT commands against the database) </p>
+		<ul>
+			<li class="bold"> Username: Guest </li>
+			<li class="bold"> Password: guestpass </li>
+		</ul>
+		</article>
+	</div>
+<hr>
+<footer> &copy Stark102088 Industries </footer>	
+</body>
+</html>
